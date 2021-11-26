@@ -909,3 +909,1097 @@ drop view if exists "demo_dbt"."public"."dim_customers__dbt_backup" cascade
 Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
 2021-11-26 09:54:28.766432 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feaf0a01880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feaf09d6670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feaf09f89d0>]}
 2021-11-26 09:54:28.766591 (MainThread): Flushing usage events
+2021-11-26 10:31:02.561346 (MainThread): Running with dbt=0.21.0
+2021-11-26 10:31:02.643774 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/pedbadiee/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-11-26 10:31:02.645174 (MainThread): Tracking: tracking
+2021-11-26 10:31:02.678295 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4c0757310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4c0766250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4c0760190>]}
+2021-11-26 10:31:02.687257 (MainThread): Partial parsing not enabled
+2021-11-26 10:31:02.696888 (MainThread): Parsing macros/catalog.sql
+2021-11-26 10:31:02.699693 (MainThread): Parsing macros/relations.sql
+2021-11-26 10:31:02.700726 (MainThread): Parsing macros/adapters.sql
+2021-11-26 10:31:02.717086 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-11-26 10:31:02.718240 (MainThread): Parsing macros/core.sql
+2021-11-26 10:31:02.720824 (MainThread): Parsing macros/materializations/test.sql
+2021-11-26 10:31:02.725697 (MainThread): Parsing macros/materializations/helpers.sql
+2021-11-26 10:31:02.732433 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-11-26 10:31:02.733569 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-11-26 10:31:02.745585 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-11-26 10:31:02.771786 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-11-26 10:31:02.788475 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-11-26 10:31:02.789664 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-11-26 10:31:02.797080 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-11-26 10:31:02.812124 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-11-26 10:31:02.822444 (MainThread): Parsing macros/materializations/table/table.sql
+2021-11-26 10:31:02.828364 (MainThread): Parsing macros/materializations/view/view.sql
+2021-11-26 10:31:02.833839 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-11-26 10:31:02.836442 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-11-26 10:31:02.837426 (MainThread): Parsing macros/etc/query.sql
+2021-11-26 10:31:02.838052 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-11-26 10:31:02.839080 (MainThread): Parsing macros/etc/datetime.sql
+2021-11-26 10:31:02.845144 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-11-26 10:31:02.846319 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-11-26 10:31:02.847943 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-11-26 10:31:02.848983 (MainThread): Parsing macros/adapters/common.sql
+2021-11-26 10:31:02.889845 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-11-26 10:31:02.890964 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-11-26 10:31:02.891720 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-11-26 10:31:02.892586 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-11-26 10:31:03.006076 (MainThread): Acquiring new postgres connection "model.demo_dbt.stg_customers".
+2021-11-26 10:31:03.013793 (MainThread): Acquiring new postgres connection "model.demo_dbt.dim_customers".
+2021-11-26 10:31:03.015369 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4d279fa60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4d2803d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4d27f28b0>]}
+2021-11-26 10:31:03.015551 (MainThread): Flushing usage events
+2021-11-26 10:31:03.557317 (MainThread): Connection 'model.demo_dbt.dim_customers' was properly closed.
+2021-11-26 10:31:03.558138 (MainThread): Encountered an error:
+2021-11-26 10:31:03.558701 (MainThread): Compilation Error in model dim_customers (models/dim_customers.sql)
+  expected token 'end of print statement', got ':'
+    line 6
+      select * from {{ref:'stg_customers'}}
+2021-11-26 10:31:03.567731 (MainThread): Traceback (most recent call last):
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 517, in catch_jinja
+    yield
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 544, in get_template
+    return env.from_string(template_source, globals=ctx)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/jinja2/environment.py", line 941, in from_string
+    return cls.from_code(self, self.compile(source), globals, None)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<unknown>", line 6, in template
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got ':'
+  line 6
+    select * from {{ref:'stg_customers'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/main.py", line 127, in main
+    results, succeeded = handle_and_check(args)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/main.py", line 205, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/main.py", line 258, in run_from_args
+    results = task.run()
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 433, in run
+    self._runtime_initialize()
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 149, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 87, in _runtime_initialize
+    self.load_manifest()
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 74, in load_manifest
+    self.manifest = ManifestLoader.get_full_manifest(self.config)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/parser/manifest.py", line 182, in get_full_manifest
+    manifest = loader.load()
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/parser/manifest.py", line 301, in load
+    self.parse_project(
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/parser/manifest.py", line 410, in parse_project
+    parser.parse_file(block)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/parser/base.py", line 432, in parse_file
+    self.parse_node(file_block)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/parser/base.py", line 405, in parse_node
+    self.render_update(node, config)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/parser/models.py", line 81, in render_update
+    super().render_update(node, config)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/parser/base.py", line 380, in render_update
+    context = self.render_with_context(node, config)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/parser/base.py", line 271, in render_with_context
+    get_rendered(
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 591, in get_rendered
+    template = get_template(
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 544, in get_template
+    return env.from_string(template_source, globals=ctx)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 520, in catch_jinja
+    raise CompilationException(str(e), node) from e
+dbt.exceptions.CompilationException: Compilation Error in model dim_customers (models/dim_customers.sql)
+  expected token 'end of print statement', got ':'
+    line 6
+      select * from {{ref:'stg_customers'}}
+
+2021-11-26 10:32:06.955544 (MainThread): Running with dbt=0.21.0
+2021-11-26 10:32:07.018757 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/pedbadiee/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-11-26 10:32:07.020343 (MainThread): Tracking: tracking
+2021-11-26 10:32:07.045022 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b20e4ff40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b20e5e310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b20e57250>]}
+2021-11-26 10:32:07.053907 (MainThread): Partial parsing not enabled
+2021-11-26 10:32:07.063083 (MainThread): Parsing macros/catalog.sql
+2021-11-26 10:32:07.065842 (MainThread): Parsing macros/relations.sql
+2021-11-26 10:32:07.066981 (MainThread): Parsing macros/adapters.sql
+2021-11-26 10:32:07.085024 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-11-26 10:32:07.086241 (MainThread): Parsing macros/core.sql
+2021-11-26 10:32:07.088897 (MainThread): Parsing macros/materializations/test.sql
+2021-11-26 10:32:07.094051 (MainThread): Parsing macros/materializations/helpers.sql
+2021-11-26 10:32:07.101404 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-11-26 10:32:07.102590 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-11-26 10:32:07.115204 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-11-26 10:32:07.144483 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-11-26 10:32:07.162632 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-11-26 10:32:07.163885 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-11-26 10:32:07.171690 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-11-26 10:32:07.188542 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-11-26 10:32:07.200250 (MainThread): Parsing macros/materializations/table/table.sql
+2021-11-26 10:32:07.206567 (MainThread): Parsing macros/materializations/view/view.sql
+2021-11-26 10:32:07.212404 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-11-26 10:32:07.215113 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-11-26 10:32:07.216122 (MainThread): Parsing macros/etc/query.sql
+2021-11-26 10:32:07.216755 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-11-26 10:32:07.217818 (MainThread): Parsing macros/etc/datetime.sql
+2021-11-26 10:32:07.224354 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-11-26 10:32:07.225574 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-11-26 10:32:07.227255 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-11-26 10:32:07.228323 (MainThread): Parsing macros/adapters/common.sql
+2021-11-26 10:32:07.274387 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-11-26 10:32:07.275544 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-11-26 10:32:07.276321 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-11-26 10:32:07.277218 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-11-26 10:32:07.392172 (MainThread): Acquiring new postgres connection "model.demo_dbt.stg_customers".
+2021-11-26 10:32:07.399977 (MainThread): Acquiring new postgres connection "model.demo_dbt.dim_customers".
+2021-11-26 10:32:07.402673 (MainThread): Acquiring new postgres connection "model.demo_dbt.stg_orders".
+2021-11-26 10:32:07.404339 (MainThread): Acquiring new postgres connection "model.demo_dbt.my_first_dbt_model".
+2021-11-26 10:32:07.406569 (MainThread): Acquiring new postgres connection "model.demo_dbt.my_second_dbt_model".
+2021-11-26 10:32:07.438069 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '82579d9b-3677-4658-af88-640301dbefa7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b100e7640>]}
+2021-11-26 10:32:07.441852 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '82579d9b-3677-4658-af88-640301dbefa7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b4261ad90>]}
+2021-11-26 10:32:07.442037 (MainThread): Found 5 models, 4 tests, 0 snapshots, 0 analyses, 162 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-11-26 10:32:07.442972 (MainThread): 
+2021-11-26 10:32:07.443191 (MainThread): Acquiring new postgres connection "master".
+2021-11-26 10:32:07.444055 (ThreadPoolExecutor-0_0): Acquiring new postgres connection "list_demo_dbt".
+2021-11-26 10:32:07.450806 (ThreadPoolExecutor-0_0): Using postgres connection "list_demo_dbt".
+2021-11-26 10:32:07.459212 (ThreadPoolExecutor-0_0): On list_demo_dbt: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "connection_name": "list_demo_dbt"} */
+
+    select distinct nspname from pg_namespace
+  
+2021-11-26 10:32:07.459601 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-11-26 10:32:07.521005 (ThreadPoolExecutor-0_0): SQL status: SELECT 5 in 0.06 seconds
+2021-11-26 10:32:07.522946 (ThreadPoolExecutor-0_0): On list_demo_dbt: Close
+2021-11-26 10:32:07.524053 (ThreadPoolExecutor-1_0): Acquiring new postgres connection "list_demo_dbt_public".
+2021-11-26 10:32:07.529483 (ThreadPoolExecutor-1_0): Using postgres connection "list_demo_dbt_public".
+2021-11-26 10:32:07.529629 (ThreadPoolExecutor-1_0): On list_demo_dbt_public: BEGIN
+2021-11-26 10:32:07.529750 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-11-26 10:32:07.535734 (ThreadPoolExecutor-1_0): SQL status: BEGIN in 0.01 seconds
+2021-11-26 10:32:07.535868 (ThreadPoolExecutor-1_0): Using postgres connection "list_demo_dbt_public".
+2021-11-26 10:32:07.535974 (ThreadPoolExecutor-1_0): On list_demo_dbt_public: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "connection_name": "list_demo_dbt_public"} */
+select
+      'demo_dbt' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'demo_dbt' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+  
+2021-11-26 10:32:07.548288 (ThreadPoolExecutor-1_0): SQL status: SELECT 3 in 0.01 seconds
+2021-11-26 10:32:07.549310 (ThreadPoolExecutor-1_0): On list_demo_dbt_public: ROLLBACK
+2021-11-26 10:32:07.549609 (ThreadPoolExecutor-1_0): On list_demo_dbt_public: Close
+2021-11-26 10:32:07.553439 (MainThread): Using postgres connection "master".
+2021-11-26 10:32:07.553601 (MainThread): On master: BEGIN
+2021-11-26 10:32:07.553729 (MainThread): Opening a new connection, currently in state init
+2021-11-26 10:32:07.557948 (MainThread): SQL status: BEGIN in 0.00 seconds
+2021-11-26 10:32:07.558101 (MainThread): Using postgres connection "master".
+2021-11-26 10:32:07.558217 (MainThread): On master: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2021-11-26 10:32:07.587621 (MainThread): SQL status: SELECT 1 in 0.03 seconds
+2021-11-26 10:32:07.588911 (MainThread): On master: ROLLBACK
+2021-11-26 10:32:07.589450 (MainThread): Using postgres connection "master".
+2021-11-26 10:32:07.589593 (MainThread): On master: BEGIN
+2021-11-26 10:32:07.590152 (MainThread): SQL status: BEGIN in 0.00 seconds
+2021-11-26 10:32:07.590298 (MainThread): On master: COMMIT
+2021-11-26 10:32:07.590425 (MainThread): Using postgres connection "master".
+2021-11-26 10:32:07.590543 (MainThread): On master: COMMIT
+2021-11-26 10:32:07.590875 (MainThread): SQL status: COMMIT in 0.00 seconds
+2021-11-26 10:32:07.591029 (MainThread): On master: Close
+2021-11-26 10:32:07.591352 (MainThread): 11:32:07 | Concurrency: 10 threads (target='dev')
+2021-11-26 10:32:07.591522 (MainThread): 11:32:07 | 
+2021-11-26 10:32:07.594866 (Thread-1): Began running node model.demo_dbt.my_first_dbt_model
+2021-11-26 10:32:07.595067 (Thread-2): Began running node model.demo_dbt.stg_customers
+2021-11-26 10:32:07.595250 (Thread-3): Began running node model.demo_dbt.stg_orders
+2021-11-26 10:32:07.595499 (Thread-1): 11:32:07 | 1 of 5 START table model public.my_first_dbt_model................... [RUN]
+2021-11-26 10:32:07.595721 (Thread-2): 11:32:07 | 2 of 5 START view model public.stg_customers......................... [RUN]
+2021-11-26 10:32:07.595934 (Thread-3): 11:32:07 | 3 of 5 START view model public.stg_orders............................ [RUN]
+2021-11-26 10:32:07.596274 (Thread-1): Acquiring new postgres connection "model.demo_dbt.my_first_dbt_model".
+2021-11-26 10:32:07.596566 (Thread-2): Acquiring new postgres connection "model.demo_dbt.stg_customers".
+2021-11-26 10:32:07.596878 (Thread-3): Acquiring new postgres connection "model.demo_dbt.stg_orders".
+2021-11-26 10:32:07.597036 (Thread-1): Compiling model.demo_dbt.my_first_dbt_model
+2021-11-26 10:32:07.597172 (Thread-2): Compiling model.demo_dbt.stg_customers
+2021-11-26 10:32:07.597299 (Thread-3): Compiling model.demo_dbt.stg_orders
+2021-11-26 10:32:07.599506 (Thread-1): Writing injected SQL for node "model.demo_dbt.my_first_dbt_model"
+2021-11-26 10:32:07.600452 (Thread-2): Writing injected SQL for node "model.demo_dbt.stg_customers"
+2021-11-26 10:32:07.601450 (Thread-3): Writing injected SQL for node "model.demo_dbt.stg_orders"
+2021-11-26 10:32:07.601914 (Thread-2): finished collecting timing info
+2021-11-26 10:32:07.602100 (Thread-3): finished collecting timing info
+2021-11-26 10:32:07.626572 (Thread-2): Writing runtime SQL for node "model.demo_dbt.stg_customers"
+2021-11-26 10:32:07.627291 (Thread-3): Writing runtime SQL for node "model.demo_dbt.stg_orders"
+2021-11-26 10:32:07.627463 (Thread-1): finished collecting timing info
+2021-11-26 10:32:07.640225 (Thread-1): Writing runtime SQL for node "model.demo_dbt.my_first_dbt_model"
+2021-11-26 10:32:07.640441 (Thread-3): Using postgres connection "model.demo_dbt.stg_orders".
+2021-11-26 10:32:07.640570 (Thread-2): Using postgres connection "model.demo_dbt.stg_customers".
+2021-11-26 10:32:07.640659 (Thread-3): On model.demo_dbt.stg_orders: BEGIN
+2021-11-26 10:32:07.640764 (Thread-2): On model.demo_dbt.stg_customers: BEGIN
+2021-11-26 10:32:07.640902 (Thread-3): Opening a new connection, currently in state init
+2021-11-26 10:32:07.641027 (Thread-2): Opening a new connection, currently in state init
+2021-11-26 10:32:07.641121 (Thread-1): Using postgres connection "model.demo_dbt.my_first_dbt_model".
+2021-11-26 10:32:07.641407 (Thread-1): On model.demo_dbt.my_first_dbt_model: BEGIN
+2021-11-26 10:32:07.641498 (Thread-1): Opening a new connection, currently in state closed
+2021-11-26 10:32:07.644856 (Thread-2): SQL status: BEGIN in 0.00 seconds
+2021-11-26 10:32:07.645019 (Thread-3): SQL status: BEGIN in 0.00 seconds
+2021-11-26 10:32:07.645115 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2021-11-26 10:32:07.645215 (Thread-2): Using postgres connection "model.demo_dbt.stg_customers".
+2021-11-26 10:32:07.645322 (Thread-3): Using postgres connection "model.demo_dbt.stg_orders".
+2021-11-26 10:32:07.645411 (Thread-1): Using postgres connection "model.demo_dbt.my_first_dbt_model".
+2021-11-26 10:32:07.645497 (Thread-2): On model.demo_dbt.stg_customers: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.stg_customers"} */
+
+  create view "demo_dbt"."public"."stg_customers__dbt_tmp" as (
+    with customers as (
+	select
+	id as customer_id,
+	first_name,
+	last_name
+	from raw.raw_customers
+)
+
+select * from customers
+  );
+
+2021-11-26 10:32:07.645579 (Thread-3): On model.demo_dbt.stg_orders: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.stg_orders"} */
+
+  create view "demo_dbt"."public"."stg_orders__dbt_tmp" as (
+    with orders as (
+	select 
+	id as order_id,
+	user_id as customer_id,
+	order_date,
+	status
+	
+	from raw.raw_orders
+)
+
+select * from orders
+  );
+
+2021-11-26 10:32:07.645685 (Thread-1): On model.demo_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.my_first_dbt_model"} */
+
+
+  create  table "demo_dbt"."public"."my_first_dbt_model__dbt_tmp"
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+2021-11-26 10:32:07.652917 (Thread-1): SQL status: SELECT 2 in 0.01 seconds
+2021-11-26 10:32:07.653089 (Thread-2): SQL status: CREATE VIEW in 0.01 seconds
+2021-11-26 10:32:07.653195 (Thread-3): SQL status: CREATE VIEW in 0.01 seconds
+2021-11-26 10:32:07.657603 (Thread-1): Using postgres connection "model.demo_dbt.my_first_dbt_model".
+2021-11-26 10:32:07.658909 (Thread-2): Using postgres connection "model.demo_dbt.stg_customers".
+2021-11-26 10:32:07.660060 (Thread-3): Using postgres connection "model.demo_dbt.stg_orders".
+2021-11-26 10:32:07.660175 (Thread-1): On model.demo_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.my_first_dbt_model"} */
+alter table "demo_dbt"."public"."my_first_dbt_model" rename to "my_first_dbt_model__dbt_backup"
+2021-11-26 10:32:07.660268 (Thread-2): On model.demo_dbt.stg_customers: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.stg_customers"} */
+alter table "demo_dbt"."public"."stg_customers__dbt_tmp" rename to "stg_customers"
+2021-11-26 10:32:07.660357 (Thread-3): On model.demo_dbt.stg_orders: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.stg_orders"} */
+alter table "demo_dbt"."public"."stg_orders__dbt_tmp" rename to "stg_orders"
+2021-11-26 10:32:07.660787 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2021-11-26 10:32:07.660890 (Thread-2): SQL status: ALTER TABLE in 0.00 seconds
+2021-11-26 10:32:07.662735 (Thread-1): Using postgres connection "model.demo_dbt.my_first_dbt_model".
+2021-11-26 10:32:07.662831 (Thread-3): SQL status: ALTER TABLE in 0.00 seconds
+2021-11-26 10:32:07.667125 (Thread-2): On model.demo_dbt.stg_customers: COMMIT
+2021-11-26 10:32:07.667243 (Thread-1): On model.demo_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.my_first_dbt_model"} */
+alter table "demo_dbt"."public"."my_first_dbt_model__dbt_tmp" rename to "my_first_dbt_model"
+2021-11-26 10:32:07.667876 (Thread-3): On model.demo_dbt.stg_orders: COMMIT
+2021-11-26 10:32:07.667985 (Thread-2): Using postgres connection "model.demo_dbt.stg_customers".
+2021-11-26 10:32:07.668111 (Thread-3): Using postgres connection "model.demo_dbt.stg_orders".
+2021-11-26 10:32:07.668206 (Thread-2): On model.demo_dbt.stg_customers: COMMIT
+2021-11-26 10:32:07.668295 (Thread-3): On model.demo_dbt.stg_orders: COMMIT
+2021-11-26 10:32:07.668429 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2021-11-26 10:32:07.671825 (Thread-1): On model.demo_dbt.my_first_dbt_model: COMMIT
+2021-11-26 10:32:07.671932 (Thread-2): SQL status: COMMIT in 0.00 seconds
+2021-11-26 10:32:07.672018 (Thread-1): Using postgres connection "model.demo_dbt.my_first_dbt_model".
+2021-11-26 10:32:07.672088 (Thread-3): SQL status: COMMIT in 0.00 seconds
+2021-11-26 10:32:07.674712 (Thread-2): Using postgres connection "model.demo_dbt.stg_customers".
+2021-11-26 10:32:07.674823 (Thread-1): On model.demo_dbt.my_first_dbt_model: COMMIT
+2021-11-26 10:32:07.675655 (Thread-3): Using postgres connection "model.demo_dbt.stg_orders".
+2021-11-26 10:32:07.675758 (Thread-2): On model.demo_dbt.stg_customers: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.stg_customers"} */
+drop view if exists "demo_dbt"."public"."stg_customers__dbt_backup" cascade
+2021-11-26 10:32:07.675874 (Thread-3): On model.demo_dbt.stg_orders: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.stg_orders"} */
+drop view if exists "demo_dbt"."public"."stg_orders__dbt_backup" cascade
+2021-11-26 10:32:07.676098 (Thread-1): SQL status: COMMIT in 0.00 seconds
+2021-11-26 10:32:07.676961 (Thread-1): Using postgres connection "model.demo_dbt.my_first_dbt_model".
+2021-11-26 10:32:07.677069 (Thread-2): SQL status: DROP VIEW in 0.00 seconds
+2021-11-26 10:32:07.677152 (Thread-3): SQL status: DROP VIEW in 0.00 seconds
+2021-11-26 10:32:07.677225 (Thread-1): On model.demo_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.my_first_dbt_model"} */
+drop table if exists "demo_dbt"."public"."my_first_dbt_model__dbt_backup" cascade
+2021-11-26 10:32:07.677854 (Thread-2): finished collecting timing info
+2021-11-26 10:32:07.678425 (Thread-3): finished collecting timing info
+2021-11-26 10:32:07.678567 (Thread-2): On model.demo_dbt.stg_customers: Close
+2021-11-26 10:32:07.678679 (Thread-3): On model.demo_dbt.stg_orders: Close
+2021-11-26 10:32:07.678934 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '82579d9b-3677-4658-af88-640301dbefa7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b100dcac0>]}
+2021-11-26 10:32:07.679172 (Thread-2): 11:32:07 | 2 of 5 OK created view model public.stg_customers.................... [CREATE VIEW in 0.08s]
+2021-11-26 10:32:07.679295 (Thread-2): Finished running node model.demo_dbt.stg_customers
+2021-11-26 10:32:07.679587 (Thread-3): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '82579d9b-3677-4658-af88-640301dbefa7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b10107040>]}
+2021-11-26 10:32:07.679777 (Thread-3): 11:32:07 | 3 of 5 OK created view model public.stg_orders....................... [CREATE VIEW in 0.08s]
+2021-11-26 10:32:07.679918 (Thread-3): Finished running node model.demo_dbt.stg_orders
+2021-11-26 10:32:07.680149 (Thread-5): Began running node model.demo_dbt.dim_customers
+2021-11-26 10:32:07.680302 (Thread-5): 11:32:07 | 4 of 5 START table model public.dim_customers........................ [RUN]
+2021-11-26 10:32:07.680499 (Thread-5): Acquiring new postgres connection "model.demo_dbt.dim_customers".
+2021-11-26 10:32:07.680594 (Thread-5): Compiling model.demo_dbt.dim_customers
+2021-11-26 10:32:07.682478 (Thread-5): Writing injected SQL for node "model.demo_dbt.dim_customers"
+2021-11-26 10:32:07.682957 (Thread-5): finished collecting timing info
+2021-11-26 10:32:07.684214 (Thread-5): Writing runtime SQL for node "model.demo_dbt.dim_customers"
+2021-11-26 10:32:07.684330 (Thread-1): SQL status: DROP TABLE in 0.01 seconds
+2021-11-26 10:32:07.685009 (Thread-1): finished collecting timing info
+2021-11-26 10:32:07.685129 (Thread-1): On model.demo_dbt.my_first_dbt_model: Close
+2021-11-26 10:32:07.685368 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '82579d9b-3677-4658-af88-640301dbefa7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b426b7f10>]}
+2021-11-26 10:32:07.685514 (Thread-5): Using postgres connection "model.demo_dbt.dim_customers".
+2021-11-26 10:32:07.685721 (Thread-1): 11:32:07 | 1 of 5 OK created table model public.my_first_dbt_model.............. [SELECT 2 in 0.09s]
+2021-11-26 10:32:07.685804 (Thread-5): On model.demo_dbt.dim_customers: BEGIN
+2021-11-26 10:32:07.685935 (Thread-1): Finished running node model.demo_dbt.my_first_dbt_model
+2021-11-26 10:32:07.686032 (Thread-5): Opening a new connection, currently in state init
+2021-11-26 10:32:07.686353 (Thread-7): Began running node model.demo_dbt.my_second_dbt_model
+2021-11-26 10:32:07.686506 (Thread-7): 11:32:07 | 5 of 5 START view model public.my_second_dbt_model................... [RUN]
+2021-11-26 10:32:07.686693 (Thread-7): Acquiring new postgres connection "model.demo_dbt.my_second_dbt_model".
+2021-11-26 10:32:07.686786 (Thread-7): Compiling model.demo_dbt.my_second_dbt_model
+2021-11-26 10:32:07.688125 (Thread-7): Writing injected SQL for node "model.demo_dbt.my_second_dbt_model"
+2021-11-26 10:32:07.688382 (Thread-7): finished collecting timing info
+2021-11-26 10:32:07.689599 (Thread-7): Writing runtime SQL for node "model.demo_dbt.my_second_dbt_model"
+2021-11-26 10:32:07.689848 (Thread-7): Using postgres connection "model.demo_dbt.my_second_dbt_model".
+2021-11-26 10:32:07.689931 (Thread-7): On model.demo_dbt.my_second_dbt_model: BEGIN
+2021-11-26 10:32:07.690015 (Thread-5): SQL status: BEGIN in 0.00 seconds
+2021-11-26 10:32:07.690110 (Thread-7): Opening a new connection, currently in state init
+2021-11-26 10:32:07.690189 (Thread-5): Using postgres connection "model.demo_dbt.dim_customers".
+2021-11-26 10:32:07.690344 (Thread-5): On model.demo_dbt.dim_customers: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.dim_customers"} */
+
+
+  create  table "demo_dbt"."public"."dim_customers__dbt_tmp"
+  as (
+    
+
+with customers as (
+    select * from "demo_dbt"."public"."stg_customers"
+),
+
+with orders as (
+    select * from "demo_dbt"."public"."stg_orders"
+),
+
+
+customer_orders as (
+	
+	select 
+	customer_id,
+	min(order_date) as first_order_date,
+	max(order_date) as most_recent_order_date,
+	count(order_id) as number_of_orders
+	
+	from orders
+	group by 1
+),
+
+final as (
+	
+	select
+	customers.customer_id,
+	customers.first_name,
+	customers.last_name,
+	customer_orders.first_order_date,
+	customer_orders.most_recent_order_date,
+	coalesce(customer_orders.number_of_orders,0) as number_of_orders
+
+	
+	from customers
+	left join customer_orders using (customer_id )
+)
+select * from final
+  );
+2021-11-26 10:32:07.690607 (Thread-5): Postgres error: syntax error at or near "with"
+LINE 12: with orders as (
+         ^
+
+2021-11-26 10:32:07.690700 (Thread-5): On model.demo_dbt.dim_customers: ROLLBACK
+2021-11-26 10:32:07.691018 (Thread-5): finished collecting timing info
+2021-11-26 10:32:07.691173 (Thread-5): On model.demo_dbt.dim_customers: Close
+2021-11-26 10:32:07.693329 (Thread-7): SQL status: BEGIN in 0.00 seconds
+2021-11-26 10:32:07.693632 (Thread-7): Using postgres connection "model.demo_dbt.my_second_dbt_model".
+2021-11-26 10:32:07.693795 (Thread-7): On model.demo_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.my_second_dbt_model"} */
+
+  create view "demo_dbt"."public"."my_second_dbt_model__dbt_tmp" as (
+    -- Use the `ref` function to select from other models
+
+select *
+from "demo_dbt"."public"."my_first_dbt_model"
+where id = 1
+  );
+
+2021-11-26 10:32:07.695475 (Thread-7): SQL status: CREATE VIEW in 0.00 seconds
+2021-11-26 10:32:07.691431 (Thread-5): Database Error in model dim_customers (models/dim_customers.sql)
+  syntax error at or near "with"
+  LINE 12: with orders as (
+           ^
+  compiled SQL at target/run/demo_dbt/models/dim_customers.sql
+Traceback (most recent call last):
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/postgres/connections.py", line 56, in exception_handler
+    yield
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+psycopg2.errors.SyntaxError: syntax error at or near "with"
+LINE 12: with orders as (
+         ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 348, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 291, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 393, in run
+    return self.execute(compiled_node, manifest)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 249, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 70, in macro
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 226, in execute
+    return self.connections.execute(
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 131, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/pedbadiee/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/postgres/connections.py", line 67, in exception_handler
+    raise dbt.exceptions.DatabaseException(str(e).strip()) from e
+dbt.exceptions.DatabaseException: Database Error in model dim_customers (models/dim_customers.sql)
+  syntax error at or near "with"
+  LINE 12: with orders as (
+           ^
+  compiled SQL at target/run/demo_dbt/models/dim_customers.sql
+2021-11-26 10:32:07.697013 (Thread-7): Using postgres connection "model.demo_dbt.my_second_dbt_model".
+2021-11-26 10:32:07.697197 (Thread-5): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '82579d9b-3677-4658-af88-640301dbefa7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b1005f280>]}
+2021-11-26 10:32:07.697295 (Thread-7): On model.demo_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.my_second_dbt_model"} */
+alter table "demo_dbt"."public"."my_second_dbt_model__dbt_tmp" rename to "my_second_dbt_model"
+2021-11-26 10:32:07.697543 (Thread-5): 11:32:07 | 4 of 5 ERROR creating table model public.dim_customers............... [ERROR in 0.02s]
+2021-11-26 10:32:07.697652 (Thread-5): Finished running node model.demo_dbt.dim_customers
+2021-11-26 10:32:07.697776 (Thread-7): SQL status: ALTER TABLE in 0.00 seconds
+2021-11-26 10:32:07.698501 (Thread-7): On model.demo_dbt.my_second_dbt_model: COMMIT
+2021-11-26 10:32:07.698589 (Thread-7): Using postgres connection "model.demo_dbt.my_second_dbt_model".
+2021-11-26 10:32:07.698666 (Thread-7): On model.demo_dbt.my_second_dbt_model: COMMIT
+2021-11-26 10:32:07.699025 (Thread-7): SQL status: COMMIT in 0.00 seconds
+2021-11-26 10:32:07.699780 (Thread-7): Using postgres connection "model.demo_dbt.my_second_dbt_model".
+2021-11-26 10:32:07.699967 (Thread-7): On model.demo_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.my_second_dbt_model"} */
+drop view if exists "demo_dbt"."public"."my_second_dbt_model__dbt_backup" cascade
+2021-11-26 10:32:07.700279 (Thread-7): SQL status: DROP VIEW in 0.00 seconds
+2021-11-26 10:32:07.700815 (Thread-7): finished collecting timing info
+2021-11-26 10:32:07.700916 (Thread-7): On model.demo_dbt.my_second_dbt_model: Close
+2021-11-26 10:32:07.701114 (Thread-7): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '82579d9b-3677-4658-af88-640301dbefa7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b426b7f10>]}
+2021-11-26 10:32:07.701303 (Thread-7): 11:32:07 | 5 of 5 OK created view model public.my_second_dbt_model.............. [CREATE VIEW in 0.01s]
+2021-11-26 10:32:07.701406 (Thread-7): Finished running node model.demo_dbt.my_second_dbt_model
+2021-11-26 10:32:07.702217 (MainThread): Acquiring new postgres connection "master".
+2021-11-26 10:32:07.702335 (MainThread): Using postgres connection "master".
+2021-11-26 10:32:07.702416 (MainThread): On master: BEGIN
+2021-11-26 10:32:07.702498 (MainThread): Opening a new connection, currently in state closed
+2021-11-26 10:32:07.705396 (MainThread): SQL status: BEGIN in 0.00 seconds
+2021-11-26 10:32:07.705515 (MainThread): On master: COMMIT
+2021-11-26 10:32:07.705598 (MainThread): Using postgres connection "master".
+2021-11-26 10:32:07.705677 (MainThread): On master: COMMIT
+2021-11-26 10:32:07.705856 (MainThread): SQL status: COMMIT in 0.00 seconds
+2021-11-26 10:32:07.705947 (MainThread): On master: Close
+2021-11-26 10:32:07.706161 (MainThread): 11:32:07 | 
+2021-11-26 10:32:07.706271 (MainThread): 11:32:07 | Finished running 3 view models, 2 table models in 0.26s.
+2021-11-26 10:32:07.706368 (MainThread): Connection 'master' was properly closed.
+2021-11-26 10:32:07.706449 (MainThread): Connection 'model.demo_dbt.my_first_dbt_model' was properly closed.
+2021-11-26 10:32:07.706525 (MainThread): Connection 'model.demo_dbt.stg_customers' was properly closed.
+2021-11-26 10:32:07.706599 (MainThread): Connection 'model.demo_dbt.stg_orders' was properly closed.
+2021-11-26 10:32:07.706672 (MainThread): Connection 'model.demo_dbt.dim_customers' was properly closed.
+2021-11-26 10:32:07.706745 (MainThread): Connection 'model.demo_dbt.my_second_dbt_model' was properly closed.
+2021-11-26 10:32:07.709875 (MainThread): 
+2021-11-26 10:32:07.710041 (MainThread): Completed with 1 error and 0 warnings:
+2021-11-26 10:32:07.710144 (MainThread): 
+2021-11-26 10:32:07.710240 (MainThread): Database Error in model dim_customers (models/dim_customers.sql)
+2021-11-26 10:32:07.710330 (MainThread):   syntax error at or near "with"
+2021-11-26 10:32:07.710414 (MainThread):   LINE 12: with orders as (
+2021-11-26 10:32:07.710499 (MainThread):            ^
+2021-11-26 10:32:07.710583 (MainThread):   compiled SQL at target/run/demo_dbt/models/dim_customers.sql
+2021-11-26 10:32:07.710680 (MainThread): 
+Done. PASS=4 WARN=0 ERROR=1 SKIP=0 TOTAL=5
+2021-11-26 10:32:07.710833 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b425f8ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b20e4ff40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b42653550>]}
+2021-11-26 10:32:07.710993 (MainThread): Flushing usage events
+2021-11-26 10:32:38.844093 (MainThread): Running with dbt=0.21.0
+2021-11-26 10:32:38.908810 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/pedbadiee/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-11-26 10:32:38.910107 (MainThread): Tracking: tracking
+2021-11-26 10:32:38.935463 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f284d7460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f284e52e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f284df220>]}
+2021-11-26 10:32:38.944126 (MainThread): Partial parsing not enabled
+2021-11-26 10:32:38.953006 (MainThread): Parsing macros/catalog.sql
+2021-11-26 10:32:38.955589 (MainThread): Parsing macros/relations.sql
+2021-11-26 10:32:38.956686 (MainThread): Parsing macros/adapters.sql
+2021-11-26 10:32:38.974414 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-11-26 10:32:38.975619 (MainThread): Parsing macros/core.sql
+2021-11-26 10:32:38.978233 (MainThread): Parsing macros/materializations/test.sql
+2021-11-26 10:32:38.983425 (MainThread): Parsing macros/materializations/helpers.sql
+2021-11-26 10:32:38.991209 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-11-26 10:32:38.992480 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-11-26 10:32:39.005042 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-11-26 10:32:39.035359 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-11-26 10:32:39.053306 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-11-26 10:32:39.054523 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-11-26 10:32:39.062422 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-11-26 10:32:39.079163 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-11-26 10:32:39.090376 (MainThread): Parsing macros/materializations/table/table.sql
+2021-11-26 10:32:39.096955 (MainThread): Parsing macros/materializations/view/view.sql
+2021-11-26 10:32:39.102977 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-11-26 10:32:39.105635 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-11-26 10:32:39.106632 (MainThread): Parsing macros/etc/query.sql
+2021-11-26 10:32:39.107247 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-11-26 10:32:39.108293 (MainThread): Parsing macros/etc/datetime.sql
+2021-11-26 10:32:39.114717 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-11-26 10:32:39.115908 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-11-26 10:32:39.117555 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-11-26 10:32:39.118613 (MainThread): Parsing macros/adapters/common.sql
+2021-11-26 10:32:39.163698 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-11-26 10:32:39.164826 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-11-26 10:32:39.165585 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-11-26 10:32:39.166465 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-11-26 10:32:39.279518 (MainThread): Acquiring new postgres connection "model.demo_dbt.stg_customers".
+2021-11-26 10:32:39.287248 (MainThread): Acquiring new postgres connection "model.demo_dbt.dim_customers".
+2021-11-26 10:32:39.289905 (MainThread): Acquiring new postgres connection "model.demo_dbt.stg_orders".
+2021-11-26 10:32:39.291546 (MainThread): Acquiring new postgres connection "model.demo_dbt.my_first_dbt_model".
+2021-11-26 10:32:39.293748 (MainThread): Acquiring new postgres connection "model.demo_dbt.my_second_dbt_model".
+2021-11-26 10:32:39.323350 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd989930d-4b42-4513-833c-61ab02fd1fef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f1ace8610>]}
+2021-11-26 10:32:39.326496 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd989930d-4b42-4513-833c-61ab02fd1fef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f1ac48670>]}
+2021-11-26 10:32:39.326676 (MainThread): Found 5 models, 4 tests, 0 snapshots, 0 analyses, 162 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-11-26 10:32:39.327591 (MainThread): 
+2021-11-26 10:32:39.327798 (MainThread): Acquiring new postgres connection "master".
+2021-11-26 10:32:39.328572 (ThreadPoolExecutor-0_0): Acquiring new postgres connection "list_demo_dbt".
+2021-11-26 10:32:39.334812 (ThreadPoolExecutor-0_0): Using postgres connection "list_demo_dbt".
+2021-11-26 10:32:39.334968 (ThreadPoolExecutor-0_0): On list_demo_dbt: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "connection_name": "list_demo_dbt"} */
+
+    select distinct nspname from pg_namespace
+  
+2021-11-26 10:32:39.335064 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-11-26 10:32:39.374447 (ThreadPoolExecutor-0_0): SQL status: SELECT 5 in 0.04 seconds
+2021-11-26 10:32:39.376195 (ThreadPoolExecutor-0_0): On list_demo_dbt: Close
+2021-11-26 10:32:39.377154 (ThreadPoolExecutor-1_0): Acquiring new postgres connection "list_demo_dbt_public".
+2021-11-26 10:32:39.381800 (ThreadPoolExecutor-1_0): Using postgres connection "list_demo_dbt_public".
+2021-11-26 10:32:39.381929 (ThreadPoolExecutor-1_0): On list_demo_dbt_public: BEGIN
+2021-11-26 10:32:39.382034 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-11-26 10:32:39.386853 (ThreadPoolExecutor-1_0): SQL status: BEGIN in 0.00 seconds
+2021-11-26 10:32:39.386973 (ThreadPoolExecutor-1_0): Using postgres connection "list_demo_dbt_public".
+2021-11-26 10:32:39.387064 (ThreadPoolExecutor-1_0): On list_demo_dbt_public: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "connection_name": "list_demo_dbt_public"} */
+select
+      'demo_dbt' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'demo_dbt' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+  
+2021-11-26 10:32:39.393596 (ThreadPoolExecutor-1_0): SQL status: SELECT 5 in 0.01 seconds
+2021-11-26 10:32:39.394502 (ThreadPoolExecutor-1_0): On list_demo_dbt_public: ROLLBACK
+2021-11-26 10:32:39.394818 (ThreadPoolExecutor-1_0): On list_demo_dbt_public: Close
+2021-11-26 10:32:39.398196 (MainThread): Using postgres connection "master".
+2021-11-26 10:32:39.398324 (MainThread): On master: BEGIN
+2021-11-26 10:32:39.398428 (MainThread): Opening a new connection, currently in state init
+2021-11-26 10:32:39.403301 (MainThread): SQL status: BEGIN in 0.00 seconds
+2021-11-26 10:32:39.403419 (MainThread): Using postgres connection "master".
+2021-11-26 10:32:39.403511 (MainThread): On master: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2021-11-26 10:32:39.446906 (MainThread): SQL status: SELECT 3 in 0.04 seconds
+2021-11-26 10:32:39.448060 (MainThread): On master: ROLLBACK
+2021-11-26 10:32:39.448408 (MainThread): Using postgres connection "master".
+2021-11-26 10:32:39.448544 (MainThread): On master: BEGIN
+2021-11-26 10:32:39.449139 (MainThread): SQL status: BEGIN in 0.00 seconds
+2021-11-26 10:32:39.449286 (MainThread): On master: COMMIT
+2021-11-26 10:32:39.449411 (MainThread): Using postgres connection "master".
+2021-11-26 10:32:39.449529 (MainThread): On master: COMMIT
+2021-11-26 10:32:39.449844 (MainThread): SQL status: COMMIT in 0.00 seconds
+2021-11-26 10:32:39.449991 (MainThread): On master: Close
+2021-11-26 10:32:39.450271 (MainThread): 11:32:39 | Concurrency: 10 threads (target='dev')
+2021-11-26 10:32:39.450438 (MainThread): 11:32:39 | 
+2021-11-26 10:32:39.454165 (Thread-1): Began running node model.demo_dbt.my_first_dbt_model
+2021-11-26 10:32:39.454461 (Thread-2): Began running node model.demo_dbt.stg_customers
+2021-11-26 10:32:39.454615 (Thread-3): Began running node model.demo_dbt.stg_orders
+2021-11-26 10:32:39.454875 (Thread-1): 11:32:39 | 1 of 5 START table model public.my_first_dbt_model................... [RUN]
+2021-11-26 10:32:39.455094 (Thread-2): 11:32:39 | 2 of 5 START view model public.stg_customers......................... [RUN]
+2021-11-26 10:32:39.455272 (Thread-3): 11:32:39 | 3 of 5 START view model public.stg_orders............................ [RUN]
+2021-11-26 10:32:39.455718 (Thread-1): Acquiring new postgres connection "model.demo_dbt.my_first_dbt_model".
+2021-11-26 10:32:39.456008 (Thread-2): Acquiring new postgres connection "model.demo_dbt.stg_customers".
+2021-11-26 10:32:39.456249 (Thread-3): Acquiring new postgres connection "model.demo_dbt.stg_orders".
+2021-11-26 10:32:39.456460 (Thread-1): Compiling model.demo_dbt.my_first_dbt_model
+2021-11-26 10:32:39.456613 (Thread-2): Compiling model.demo_dbt.stg_customers
+2021-11-26 10:32:39.456740 (Thread-3): Compiling model.demo_dbt.stg_orders
+2021-11-26 10:32:39.458900 (Thread-1): Writing injected SQL for node "model.demo_dbt.my_first_dbt_model"
+2021-11-26 10:32:39.459858 (Thread-2): Writing injected SQL for node "model.demo_dbt.stg_customers"
+2021-11-26 10:32:39.460882 (Thread-3): Writing injected SQL for node "model.demo_dbt.stg_orders"
+2021-11-26 10:32:39.461490 (Thread-2): finished collecting timing info
+2021-11-26 10:32:39.461686 (Thread-3): finished collecting timing info
+2021-11-26 10:32:39.467963 (Thread-1): finished collecting timing info
+2021-11-26 10:32:39.480231 (Thread-2): Writing runtime SQL for node "model.demo_dbt.stg_customers"
+2021-11-26 10:32:39.481670 (Thread-3): Writing runtime SQL for node "model.demo_dbt.stg_orders"
+2021-11-26 10:32:39.494109 (Thread-1): Writing runtime SQL for node "model.demo_dbt.my_first_dbt_model"
+2021-11-26 10:32:39.494666 (Thread-2): Using postgres connection "model.demo_dbt.stg_customers".
+2021-11-26 10:32:39.494792 (Thread-3): Using postgres connection "model.demo_dbt.stg_orders".
+2021-11-26 10:32:39.494879 (Thread-2): On model.demo_dbt.stg_customers: BEGIN
+2021-11-26 10:32:39.494994 (Thread-3): On model.demo_dbt.stg_orders: BEGIN
+2021-11-26 10:32:39.495119 (Thread-1): Using postgres connection "model.demo_dbt.my_first_dbt_model".
+2021-11-26 10:32:39.495203 (Thread-2): Opening a new connection, currently in state init
+2021-11-26 10:32:39.495289 (Thread-3): Opening a new connection, currently in state init
+2021-11-26 10:32:39.495368 (Thread-1): On model.demo_dbt.my_first_dbt_model: BEGIN
+2021-11-26 10:32:39.495635 (Thread-1): Opening a new connection, currently in state closed
+2021-11-26 10:32:39.500949 (Thread-2): SQL status: BEGIN in 0.01 seconds
+2021-11-26 10:32:39.501062 (Thread-1): SQL status: BEGIN in 0.01 seconds
+2021-11-26 10:32:39.501161 (Thread-3): SQL status: BEGIN in 0.01 seconds
+2021-11-26 10:32:39.501258 (Thread-2): Using postgres connection "model.demo_dbt.stg_customers".
+2021-11-26 10:32:39.501352 (Thread-1): Using postgres connection "model.demo_dbt.my_first_dbt_model".
+2021-11-26 10:32:39.501438 (Thread-3): Using postgres connection "model.demo_dbt.stg_orders".
+2021-11-26 10:32:39.501524 (Thread-2): On model.demo_dbt.stg_customers: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.stg_customers"} */
+
+  create view "demo_dbt"."public"."stg_customers__dbt_tmp" as (
+    with customers as (
+	select
+	id as customer_id,
+	first_name,
+	last_name
+	from raw.raw_customers
+)
+
+select * from customers
+  );
+
+2021-11-26 10:32:39.501611 (Thread-1): On model.demo_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.my_first_dbt_model"} */
+
+
+  create  table "demo_dbt"."public"."my_first_dbt_model__dbt_tmp"
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+2021-11-26 10:32:39.501697 (Thread-3): On model.demo_dbt.stg_orders: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.stg_orders"} */
+
+  create view "demo_dbt"."public"."stg_orders__dbt_tmp" as (
+    with orders as (
+	select 
+	id as order_id,
+	user_id as customer_id,
+	order_date,
+	status
+	
+	from raw.raw_orders
+)
+
+select * from orders
+  );
+
+2021-11-26 10:32:39.505790 (Thread-3): SQL status: CREATE VIEW in 0.00 seconds
+2021-11-26 10:32:39.509904 (Thread-3): Using postgres connection "model.demo_dbt.stg_orders".
+2021-11-26 10:32:39.510023 (Thread-2): SQL status: CREATE VIEW in 0.01 seconds
+2021-11-26 10:32:39.510107 (Thread-3): On model.demo_dbt.stg_orders: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.stg_orders"} */
+alter table "demo_dbt"."public"."stg_orders" rename to "stg_orders__dbt_backup"
+2021-11-26 10:32:39.510185 (Thread-1): SQL status: SELECT 2 in 0.01 seconds
+2021-11-26 10:32:39.511510 (Thread-2): Using postgres connection "model.demo_dbt.stg_customers".
+2021-11-26 10:32:39.512848 (Thread-1): Using postgres connection "model.demo_dbt.my_first_dbt_model".
+2021-11-26 10:32:39.512960 (Thread-2): On model.demo_dbt.stg_customers: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.stg_customers"} */
+alter table "demo_dbt"."public"."stg_customers" rename to "stg_customers__dbt_backup"
+2021-11-26 10:32:39.513054 (Thread-1): On model.demo_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.my_first_dbt_model"} */
+alter table "demo_dbt"."public"."my_first_dbt_model" rename to "my_first_dbt_model__dbt_backup"
+2021-11-26 10:32:39.514278 (Thread-3): SQL status: ALTER TABLE in 0.00 seconds
+2021-11-26 10:32:39.514375 (Thread-2): SQL status: ALTER TABLE in 0.00 seconds
+2021-11-26 10:32:39.516251 (Thread-3): Using postgres connection "model.demo_dbt.stg_orders".
+2021-11-26 10:32:39.516345 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2021-11-26 10:32:39.517486 (Thread-2): Using postgres connection "model.demo_dbt.stg_customers".
+2021-11-26 10:32:39.517591 (Thread-3): On model.demo_dbt.stg_orders: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.stg_orders"} */
+alter table "demo_dbt"."public"."stg_orders__dbt_tmp" rename to "stg_orders"
+2021-11-26 10:32:39.518774 (Thread-1): Using postgres connection "model.demo_dbt.my_first_dbt_model".
+2021-11-26 10:32:39.518881 (Thread-2): On model.demo_dbt.stg_customers: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.stg_customers"} */
+alter table "demo_dbt"."public"."stg_customers__dbt_tmp" rename to "stg_customers"
+2021-11-26 10:32:39.519000 (Thread-1): On model.demo_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.my_first_dbt_model"} */
+alter table "demo_dbt"."public"."my_first_dbt_model__dbt_tmp" rename to "my_first_dbt_model"
+2021-11-26 10:32:39.519505 (Thread-3): SQL status: ALTER TABLE in 0.00 seconds
+2021-11-26 10:32:39.523806 (Thread-3): On model.demo_dbt.stg_orders: COMMIT
+2021-11-26 10:32:39.523917 (Thread-2): SQL status: ALTER TABLE in 0.00 seconds
+2021-11-26 10:32:39.524007 (Thread-3): Using postgres connection "model.demo_dbt.stg_orders".
+2021-11-26 10:32:39.524080 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2021-11-26 10:32:39.524684 (Thread-2): On model.demo_dbt.stg_customers: COMMIT
+2021-11-26 10:32:39.524783 (Thread-3): On model.demo_dbt.stg_orders: COMMIT
+2021-11-26 10:32:39.527986 (Thread-1): On model.demo_dbt.my_first_dbt_model: COMMIT
+2021-11-26 10:32:39.528093 (Thread-2): Using postgres connection "model.demo_dbt.stg_customers".
+2021-11-26 10:32:39.528216 (Thread-1): Using postgres connection "model.demo_dbt.my_first_dbt_model".
+2021-11-26 10:32:39.528308 (Thread-2): On model.demo_dbt.stg_customers: COMMIT
+2021-11-26 10:32:39.528391 (Thread-1): On model.demo_dbt.my_first_dbt_model: COMMIT
+2021-11-26 10:32:39.529074 (Thread-3): SQL status: COMMIT in 0.00 seconds
+2021-11-26 10:32:39.531817 (Thread-3): Using postgres connection "model.demo_dbt.stg_orders".
+2021-11-26 10:32:39.531920 (Thread-2): SQL status: COMMIT in 0.00 seconds
+2021-11-26 10:32:39.532002 (Thread-3): On model.demo_dbt.stg_orders: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.stg_orders"} */
+drop view if exists "demo_dbt"."public"."stg_orders__dbt_backup" cascade
+2021-11-26 10:32:39.532075 (Thread-1): SQL status: COMMIT in 0.00 seconds
+2021-11-26 10:32:39.532888 (Thread-2): Using postgres connection "model.demo_dbt.stg_customers".
+2021-11-26 10:32:39.533752 (Thread-1): Using postgres connection "model.demo_dbt.my_first_dbt_model".
+2021-11-26 10:32:39.533856 (Thread-2): On model.demo_dbt.stg_customers: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.stg_customers"} */
+drop view if exists "demo_dbt"."public"."stg_customers__dbt_backup" cascade
+2021-11-26 10:32:39.533944 (Thread-1): On model.demo_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.my_first_dbt_model"} */
+drop table if exists "demo_dbt"."public"."my_first_dbt_model__dbt_backup" cascade
+2021-11-26 10:32:39.535437 (Thread-3): SQL status: DROP VIEW in 0.00 seconds
+2021-11-26 10:32:39.536078 (Thread-3): finished collecting timing info
+2021-11-26 10:32:39.536192 (Thread-2): SQL status: DROP VIEW in 0.00 seconds
+2021-11-26 10:32:39.536294 (Thread-3): On model.demo_dbt.stg_orders: Close
+2021-11-26 10:32:39.536911 (Thread-2): finished collecting timing info
+2021-11-26 10:32:39.537177 (Thread-3): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd989930d-4b42-4513-833c-61ab02fd1fef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ef82c3370>]}
+2021-11-26 10:32:39.537266 (Thread-2): On model.demo_dbt.stg_customers: Close
+2021-11-26 10:32:39.537488 (Thread-3): 11:32:39 | 3 of 5 OK created view model public.stg_orders....................... [CREATE VIEW in 0.08s]
+2021-11-26 10:32:39.537682 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd989930d-4b42-4513-833c-61ab02fd1fef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f1acdb3a0>]}
+2021-11-26 10:32:39.537785 (Thread-3): Finished running node model.demo_dbt.stg_orders
+2021-11-26 10:32:39.537885 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2021-11-26 10:32:39.538072 (Thread-2): 11:32:39 | 2 of 5 OK created view model public.stg_customers.................... [CREATE VIEW in 0.08s]
+2021-11-26 10:32:39.538746 (Thread-1): finished collecting timing info
+2021-11-26 10:32:39.538881 (Thread-1): On model.demo_dbt.my_first_dbt_model: Close
+2021-11-26 10:32:39.539005 (Thread-2): Finished running node model.demo_dbt.stg_customers
+2021-11-26 10:32:39.539225 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd989930d-4b42-4513-833c-61ab02fd1fef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f1ac9b6a0>]}
+2021-11-26 10:32:39.539528 (Thread-1): 11:32:39 | 1 of 5 OK created table model public.my_first_dbt_model.............. [SELECT 2 in 0.08s]
+2021-11-26 10:32:39.539643 (Thread-5): Began running node model.demo_dbt.dim_customers
+2021-11-26 10:32:39.539750 (Thread-1): Finished running node model.demo_dbt.my_first_dbt_model
+2021-11-26 10:32:39.539887 (Thread-5): 11:32:39 | 4 of 5 START table model public.dim_customers........................ [RUN]
+2021-11-26 10:32:39.540159 (Thread-5): Acquiring new postgres connection "model.demo_dbt.dim_customers".
+2021-11-26 10:32:39.540300 (Thread-7): Began running node model.demo_dbt.my_second_dbt_model
+2021-11-26 10:32:39.540399 (Thread-5): Compiling model.demo_dbt.dim_customers
+2021-11-26 10:32:39.540528 (Thread-7): 11:32:39 | 5 of 5 START view model public.my_second_dbt_model................... [RUN]
+2021-11-26 10:32:39.542307 (Thread-5): Writing injected SQL for node "model.demo_dbt.dim_customers"
+2021-11-26 10:32:39.542629 (Thread-7): Acquiring new postgres connection "model.demo_dbt.my_second_dbt_model".
+2021-11-26 10:32:39.542787 (Thread-7): Compiling model.demo_dbt.my_second_dbt_model
+2021-11-26 10:32:39.544196 (Thread-7): Writing injected SQL for node "model.demo_dbt.my_second_dbt_model"
+2021-11-26 10:32:39.544436 (Thread-5): finished collecting timing info
+2021-11-26 10:32:39.545653 (Thread-5): Writing runtime SQL for node "model.demo_dbt.dim_customers"
+2021-11-26 10:32:39.545800 (Thread-7): finished collecting timing info
+2021-11-26 10:32:39.546975 (Thread-7): Writing runtime SQL for node "model.demo_dbt.my_second_dbt_model"
+2021-11-26 10:32:39.547161 (Thread-5): Using postgres connection "model.demo_dbt.dim_customers".
+2021-11-26 10:32:39.547273 (Thread-5): On model.demo_dbt.dim_customers: BEGIN
+2021-11-26 10:32:39.547362 (Thread-5): Opening a new connection, currently in state init
+2021-11-26 10:32:39.547458 (Thread-7): Using postgres connection "model.demo_dbt.my_second_dbt_model".
+2021-11-26 10:32:39.547622 (Thread-7): On model.demo_dbt.my_second_dbt_model: BEGIN
+2021-11-26 10:32:39.547708 (Thread-7): Opening a new connection, currently in state init
+2021-11-26 10:32:39.552273 (Thread-5): SQL status: BEGIN in 0.00 seconds
+2021-11-26 10:32:39.552409 (Thread-7): SQL status: BEGIN in 0.00 seconds
+2021-11-26 10:32:39.552500 (Thread-5): Using postgres connection "model.demo_dbt.dim_customers".
+2021-11-26 10:32:39.552588 (Thread-7): Using postgres connection "model.demo_dbt.my_second_dbt_model".
+2021-11-26 10:32:39.552679 (Thread-5): On model.demo_dbt.dim_customers: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.dim_customers"} */
+
+
+  create  table "demo_dbt"."public"."dim_customers__dbt_tmp"
+  as (
+    
+
+with customers as (
+    select * from "demo_dbt"."public"."stg_customers"
+),
+
+orders as (
+    select * from "demo_dbt"."public"."stg_orders"
+),
+
+
+customer_orders as (
+	
+	select 
+	customer_id,
+	min(order_date) as first_order_date,
+	max(order_date) as most_recent_order_date,
+	count(order_id) as number_of_orders
+	
+	from orders
+	group by 1
+),
+
+final as (
+	
+	select
+	customers.customer_id,
+	customers.first_name,
+	customers.last_name,
+	customer_orders.first_order_date,
+	customer_orders.most_recent_order_date,
+	coalesce(customer_orders.number_of_orders,0) as number_of_orders
+
+	
+	from customers
+	left join customer_orders using (customer_id )
+)
+select * from final
+  );
+2021-11-26 10:32:39.552772 (Thread-7): On model.demo_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.my_second_dbt_model"} */
+
+  create view "demo_dbt"."public"."my_second_dbt_model__dbt_tmp" as (
+    -- Use the `ref` function to select from other models
+
+select *
+from "demo_dbt"."public"."my_first_dbt_model"
+where id = 1
+  );
+
+2021-11-26 10:32:39.556242 (Thread-7): SQL status: CREATE VIEW in 0.00 seconds
+2021-11-26 10:32:39.557698 (Thread-7): Using postgres connection "model.demo_dbt.my_second_dbt_model".
+2021-11-26 10:32:39.557796 (Thread-7): On model.demo_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.my_second_dbt_model"} */
+alter table "demo_dbt"."public"."my_second_dbt_model__dbt_tmp" rename to "my_second_dbt_model"
+2021-11-26 10:32:39.558512 (Thread-7): SQL status: ALTER TABLE in 0.00 seconds
+2021-11-26 10:32:39.559105 (Thread-7): On model.demo_dbt.my_second_dbt_model: COMMIT
+2021-11-26 10:32:39.559198 (Thread-7): Using postgres connection "model.demo_dbt.my_second_dbt_model".
+2021-11-26 10:32:39.559279 (Thread-7): On model.demo_dbt.my_second_dbt_model: COMMIT
+2021-11-26 10:32:39.559943 (Thread-7): SQL status: COMMIT in 0.00 seconds
+2021-11-26 10:32:39.560762 (Thread-7): Using postgres connection "model.demo_dbt.my_second_dbt_model".
+2021-11-26 10:32:39.560864 (Thread-7): On model.demo_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.my_second_dbt_model"} */
+drop view if exists "demo_dbt"."public"."my_second_dbt_model__dbt_backup" cascade
+2021-11-26 10:32:39.561235 (Thread-7): SQL status: DROP VIEW in 0.00 seconds
+2021-11-26 10:32:39.561886 (Thread-7): finished collecting timing info
+2021-11-26 10:32:39.562008 (Thread-7): On model.demo_dbt.my_second_dbt_model: Close
+2021-11-26 10:32:39.562256 (Thread-7): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd989930d-4b42-4513-833c-61ab02fd1fef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f1acdb3a0>]}
+2021-11-26 10:32:39.562477 (Thread-7): 11:32:39 | 5 of 5 OK created view model public.my_second_dbt_model.............. [CREATE VIEW in 0.02s]
+2021-11-26 10:32:39.562586 (Thread-7): Finished running node model.demo_dbt.my_second_dbt_model
+2021-11-26 10:32:39.565259 (Thread-5): SQL status: SELECT 100 in 0.01 seconds
+2021-11-26 10:32:39.567484 (Thread-5): Using postgres connection "model.demo_dbt.dim_customers".
+2021-11-26 10:32:39.567643 (Thread-5): On model.demo_dbt.dim_customers: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.dim_customers"} */
+alter table "demo_dbt"."public"."dim_customers" rename to "dim_customers__dbt_backup"
+2021-11-26 10:32:39.568418 (Thread-5): SQL status: ALTER TABLE in 0.00 seconds
+2021-11-26 10:32:39.569941 (Thread-5): Using postgres connection "model.demo_dbt.dim_customers".
+2021-11-26 10:32:39.570051 (Thread-5): On model.demo_dbt.dim_customers: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.dim_customers"} */
+alter table "demo_dbt"."public"."dim_customers__dbt_tmp" rename to "dim_customers"
+2021-11-26 10:32:39.570734 (Thread-5): SQL status: ALTER TABLE in 0.00 seconds
+2021-11-26 10:32:39.571367 (Thread-5): On model.demo_dbt.dim_customers: COMMIT
+2021-11-26 10:32:39.571452 (Thread-5): Using postgres connection "model.demo_dbt.dim_customers".
+2021-11-26 10:32:39.571526 (Thread-5): On model.demo_dbt.dim_customers: COMMIT
+2021-11-26 10:32:39.572200 (Thread-5): SQL status: COMMIT in 0.00 seconds
+2021-11-26 10:32:39.572896 (Thread-5): Using postgres connection "model.demo_dbt.dim_customers".
+2021-11-26 10:32:39.572985 (Thread-5): On model.demo_dbt.dim_customers: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "pedram", "target_name": "dev", "node_id": "model.demo_dbt.dim_customers"} */
+drop table if exists "demo_dbt"."public"."dim_customers__dbt_backup" cascade
+2021-11-26 10:32:39.575879 (Thread-5): SQL status: DROP TABLE in 0.00 seconds
+2021-11-26 10:32:39.576607 (Thread-5): finished collecting timing info
+2021-11-26 10:32:39.576747 (Thread-5): On model.demo_dbt.dim_customers: Close
+2021-11-26 10:32:39.577013 (Thread-5): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd989930d-4b42-4513-833c-61ab02fd1fef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f1ad765b0>]}
+2021-11-26 10:32:39.577250 (Thread-5): 11:32:39 | 4 of 5 OK created table model public.dim_customers................... [SELECT 100 in 0.04s]
+2021-11-26 10:32:39.577373 (Thread-5): Finished running node model.demo_dbt.dim_customers
+2021-11-26 10:32:39.578466 (MainThread): Acquiring new postgres connection "master".
+2021-11-26 10:32:39.578651 (MainThread): Using postgres connection "master".
+2021-11-26 10:32:39.578742 (MainThread): On master: BEGIN
+2021-11-26 10:32:39.578835 (MainThread): Opening a new connection, currently in state closed
+2021-11-26 10:32:39.584469 (MainThread): SQL status: BEGIN in 0.01 seconds
+2021-11-26 10:32:39.584619 (MainThread): On master: COMMIT
+2021-11-26 10:32:39.584710 (MainThread): Using postgres connection "master".
+2021-11-26 10:32:39.584796 (MainThread): On master: COMMIT
+2021-11-26 10:32:39.585037 (MainThread): SQL status: COMMIT in 0.00 seconds
+2021-11-26 10:32:39.585142 (MainThread): On master: Close
+2021-11-26 10:32:39.585400 (MainThread): 11:32:39 | 
+2021-11-26 10:32:39.585516 (MainThread): 11:32:39 | Finished running 3 view models, 2 table models in 0.26s.
+2021-11-26 10:32:39.585622 (MainThread): Connection 'master' was properly closed.
+2021-11-26 10:32:39.585705 (MainThread): Connection 'model.demo_dbt.my_first_dbt_model' was properly closed.
+2021-11-26 10:32:39.585786 (MainThread): Connection 'model.demo_dbt.stg_customers' was properly closed.
+2021-11-26 10:32:39.585866 (MainThread): Connection 'model.demo_dbt.stg_orders' was properly closed.
+2021-11-26 10:32:39.585948 (MainThread): Connection 'model.demo_dbt.dim_customers' was properly closed.
+2021-11-26 10:32:39.586029 (MainThread): Connection 'model.demo_dbt.my_second_dbt_model' was properly closed.
+2021-11-26 10:32:39.590363 (MainThread): 
+2021-11-26 10:32:39.590494 (MainThread): Completed successfully
+2021-11-26 10:32:39.590599 (MainThread): 
+Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+2021-11-26 10:32:39.590750 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f1ac1af70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f1ad00e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f1ac63340>]}
+2021-11-26 10:32:39.590901 (MainThread): Flushing usage events
